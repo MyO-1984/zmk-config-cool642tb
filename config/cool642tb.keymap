@@ -41,7 +41,7 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <9 8>;
             timeout-ms = <0>;
-            layers = <2>;
+            layers = <4>;
         };
 
         MS_BTN1_ {
@@ -127,15 +127,35 @@
     keymap {
         compatible = "zmk,keymap";
 
-        win_default {
+        Mac_default {
             bindings = <
-&lt 6 TAB         &kp W         &kp E     &kp R         &kp T                                                         &kp Y          &kp U  &kp I      &kp O       &lt 4 P
-&lt 6 A           &kp S         &kp D     &kp F         &kp G                    &to 1                 &kp MINUS      &kp H          &kp J  &kp K      &lt 6 L     &lt 1 BACKSPACE
-&kp Z             &kp X         &kp C     &lt 1 V       &kp B                    &kp LEFT_PARENTHESIS  &kp RIGHT_ALT  &kp N          &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT DELETE
-&mt LEFT_SHIFT Q  &kp LEFT_ALT  &lt 6 F2  &kp LEFT_GUI  &mt LEFT_CONTROL ESCAPE  &lt 1 SPACE           &lt 1 ENTER    &kp BACKSPACE                                &lt 5 SLASH
+&lt 2 TAB         &kp W         &kp E     &kp R         &kp T                                                         &kp Y          &kp U  &kp I      &kp O       &lt 6 P
+&lt 2 A           &kp S         &kp D     &kp F         &kp G                    &to 3                 &kp MINUS      &kp H          &kp J  &kp K      &lt 7 L     &lt 3 BACKSPACE
+&kp Z             &kp X         &kp C     &lt 3 V       &kp B                    &kp LEFT_PARENTHESIS  &kp RIGHT_ALT  &kp N          &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT DELETE
+&mt LEFT_SHIFT Q  &kp LEFT_ALT  &lt 7 F2  &kp LEFT_GUI  &mt LEFT_CONTROL ESCAPE  &lt 3 SPACE           &lt 3 ENTER    &kp BACKSPACE                                &lt 8 SLASH
             >;
 
             sensor-bindings = <&scroll_move_y>;
+        };
+
+        Mac_control {
+            bindings = <
+&kp LG(TAB)   &kp LG(LEFT)   &kp UP_ARROW     &kp LG(RIGHT)  &kp LANGUAGE_2                              &kp KP_NUMBER_7  &kp U  &kp I      &kp O       &kp P
+&kp LA(LEFT)  &kp LC(PG_UP)  &kp DOWN         &kp LC(PG_DN)  &kp LA(RIGHT)   &trans           &trans     &kp H            &kp J  &kp K      &kp L       &kp ENTER
+&kp LS(HOME)  &kp LC(LS(V))  &kp LC(C)        &kp LC(V)      &kp LA(F4)      &trans           &trans     &kp N            &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LS(END)   &kp LEFT_WIN   &kp LC(LS(TAB))  &kp LALT       &kp LC(TAB)     &kp LC(LS(TAB))  &kp ENTER  &kp KP_N0                                      &kp BSPC
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        Mac_arrows {
+            bindings = <
+&trans          &kp AT_SIGN  &kp END        &kp LANGUAGE_1  &kp DOLLAR                                 &kp CARET                 &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp MINUS      &kp UP_ARROW
+&kp HOME        &kp HOME     &kp BACKSPACE  &kp RIGHT       &trans      &trans  &trans                 &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &trans       &trans         &kp LG(V)       &kp LEFT    &trans  &trans                 &kp DOWN                  &kp AMPERSAND      &kp EXCLAMATION       &kp LS(SLASH)  &kp LS(INTERNATIONAL_1)
+&trans          &trans       &trans         &trans          &trans      &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)                                                          &kp INTERNATIONAL_3
+            >;
         };
 
         FUNCTION {
@@ -152,7 +172,7 @@
         NUM {
             bindings = <
 &kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                                  &kp F6          &kp F7          &kp F8          &kp F9           &kp F10
-&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 1           &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
+&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 3           &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
 &kp Z         &kp X         &kp C              &kp V          &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
             >;
@@ -165,7 +185,7 @@
 &kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
 &kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 SPACE  &kp N5  &kp N6  &lt 4 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -176,7 +196,18 @@
 &kp Q       &kp W    &kp E             &kp R         &kp T                            &kp Y          &kp U  &kp I     &kp O     &kp P
 &kp A       &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &kp H          &kp J  &kp K     &kp L     &kp ENTER
 &kp Z       &kp X    &kp C             &kp V         &kp B     &kp N3    &kp N4       &kp N          &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 2 SPACE  &kp BACKSPACE                             &kp LEFT_SHIFT
+&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 4 SPACE  &kp BACKSPACE                             &kp LEFT_SHIFT
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        Win_default {
+            bindings = <
+&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 SPACE  &kp N5  &kp N6  &lt 4 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -188,17 +219,6 @@
 &kp LA(LEFT)  &kp LC(PG_UP)  &kp DOWN         &kp LC(PG_DN)  &kp LA(RIGHT)   &trans           &trans     &kp H            &kp J  &kp K      &kp L       &kp ENTER
 &kp LS(HOME)  &kp LC(LS(V))  &kp LC(C)        &kp LC(V)      &kp LA(F4)      &trans           &trans     &kp N            &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LS(END)   &kp LEFT_WIN   &kp LC(LS(TAB))  &kp LALT       &kp LC(TAB)     &kp LC(LS(TAB))  &kp ENTER  &kp KP_N0                                      &kp BSPC
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        mac_default {
-            bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
