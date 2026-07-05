@@ -142,7 +142,7 @@
             bindings = <
 &kp LC(UP_ARROW)  &kp LC(LEFT)       &kp UP_ARROW     &kp LC(RIGHT)  &kp LANGUAGE_2                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS
 &kp LA(LG(LEFT))  &kp LA(LEFT)       &kp DOWN         &kp LA(RIGHT)  &kp LA(LG(RIGHT))  &trans           &trans         &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp SLASH
-&kp LS(LC(A))     &kp LS(LG(LA(V)))  &kp LG(C)        &kp LG(V)      &kp LG(F4)         &trans           &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL        &kp CARET
+&kp LS(LC(A))     &kp LS(LG(LA(V)))  &kp LG(C)        &kp LG(V)      &kp LG(Q)          &trans           &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL        &kp CARET
 &kp LS(LC(E))     &kp LEFT_WIN       &kp LC(LS(TAB))  &kp LALT       &kp LC(TAB)        &kp LC(LS(TAB))  &kp BACKSPACE  &kp KP_N0                                                           &kp PERCENT
             >;
 
