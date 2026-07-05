@@ -130,9 +130,9 @@
         Mac_default {
             bindings = <
 &lt 2 TAB         &kp W         &kp E     &kp R         &kp T                                                           &kp Y          &kp U  &kp I      &kp O       &lt 5 P
-&lt 2 A           &kp S         &kp D     &kp F         &kp G                    &to 3                 &kp MINUS        &kp H          &kp J  &kp K      &lt 6 L     &lt 3 BACKSPACE
+&lt 2 A           &kp S         &kp D     &kp F         &kp G                    &to 3                 &kp MINUS        &kp H          &kp J  &kp K      &lt 2 L     &lt 3 BACKSPACE
 &kp Z             &kp X         &kp C     &lt 3 V       &kp B                    &kp LEFT_PARENTHESIS  &lt 9 BACKSLASH  &kp N          &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT DELETE
-&mt LEFT_SHIFT Q  &kp LEFT_ALT  &lt 6 F2  &kp LEFT_GUI  &mt LEFT_CONTROL ESCAPE  &lt 3 SPACE           &lt 3 ENTER      &kp BACKSPACE                                &lt 7 SLASH
+&mt LEFT_SHIFT Q  &kp LEFT_ALT  &lt 2 F2  &kp LEFT_GUI  &mt LEFT_CONTROL ESCAPE  &lt 3 SPACE           &lt 3 ENTER      &kp BACKSPACE                                &lt 7 SLASH
             >;
 
             sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN>;
@@ -151,10 +151,10 @@
 
         Mac_arrows {
             bindings = <
-&trans          &kp AT_SIGN   &kp E          &kp LANGUAGE_1  &kp DOLLAR                                 &kp CARET                 &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp MINUS      &kp UP_ARROW
-&kp LC(HOME)    &kp LC(HOME)  &kp BACKSPACE  &kp RIGHT       &trans      &trans  &trans                 &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &trans        &trans         &kp LG(V)       &kp LEFT    &trans  &trans                 &kp DOWN                  &kp AMPERSAND      &kp EXCLAMATION       &kp LS(SLASH)  &kp LS(INTERNATIONAL_1)
-&trans          &trans        &trans         &trans          &trans      &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)                                                          &kp INTERNATIONAL_3
+&trans          &kp AT_SIGN   &kp LC(E)      &kp LANGUAGE_1  &kp DOLLAR                          &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp UP_ARROW
+&kp LC(HOME)    &kp LC(HOME)  &kp BACKSPACE  &kp RIGHT       &trans      &trans  &trans          &kp AT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON
+&kp LEFT_SHIFT  &trans        &trans         &kp LG(LS(V))   &kp LEFT    &trans  &trans          &kp DOWN         &kp SINGLE_QUOTE      &kp EXCLAMATION        &kp LS(SLASH)  &kp UNDER
+&trans          &trans        &trans         &trans          &trans      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                                                              &kp INT_YEN
             >;
         };
 
