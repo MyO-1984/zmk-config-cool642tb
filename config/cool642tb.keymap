@@ -135,7 +135,7 @@
 &mt LEFT_SHIFT Q  &kp LEFT_ALT  &lt 2 F2  &kp LEFT_GUI  &mt LEFT_COMMAND ESCAPE  &lt 1 SPACE    &lt 3 ENTER  &kp BACKSPACE  &mt LCTRL SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&rot_msc SCRL_DOWN SCRL_UP>;
         };
 
         Mac_control {
