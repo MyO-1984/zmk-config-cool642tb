@@ -176,7 +176,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 7    &lt 9 SPACE  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mo 7    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -238,7 +238,7 @@
         win_arrows {
             bindings = <
 &trans  &kp AT_SIGN  &kp END  &kp LANGUAGE_1  &kp DOLLAR    &kp CRRT  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS  &kp UP_ARROW
-&kp HOME  &kp HOME  &kp BACKSPACE  &kp RIGHT  &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp SQT
+&kp HOME  &kp HOME  &kp BACKSPACE  &kp RIGHT  &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH  &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp PG_UP  &trans  &kp LG(V)  &kp LEFT  &trans    &trans  &kp DOWN  &kp AMPERSAND  &kp EXCLAMATION  &kp LS(SLASH)  &kp LS(INTERNATIONAL_1)
 &trans  &kp PG_DN  &trans  &trans  &trans  &trans    &kp LS(RIGHT_BRACKET)  &kp PIPE  &kp INTERNATIONAL_3
             >;
