@@ -182,10 +182,10 @@
 
         Win_default {
             bindings = <
-&lt 7 TAB  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P
-&lt 7 A  &kp S  &kp D  &kp F  &kp G  &to 0    &kp N2  &kp H  &kp J  &kp K  &lt 7 L  &kp ENTER
-&kp Z  &kp X  &kp C  &kp V  &kp B  &lt 6 BSLH    &kp N4  &kp N  &kp M  &kp CMMA  &kp PERIOD  &mt RSFT DEL
-&mt LSFT Q  &kp LALT  &lt 7 F2  &kp LGUI  &mt LCTL ESC  &lt 5 SPC    &lt 1 RET  &kp BSPC  &kp BSPC
+&lt 7 TAB  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &lt 4 P
+&lt 7 A  &kp S  &kp D  &kp F  &kp G  &to 0    &kp ESC  &kp H  &kp J  &kp K  &lt 7 L  &lt 1 BSPC
+&kp Z  &kp X  &kp C  &lt 9 V  &kp B  &lt 6 BSLH    &kp LALT  &kp N  &kp M  &kp CMMA  &kp PERIOD  &mt RSFT DEL
+&mt LSFT Q  &kp LALT  &lt 7 F2  &kp LGUI  &mt LCTL ESC  &lt 6 SPC    &lt 9 RET  &kp BSPC  &lt 5 FSLH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -193,10 +193,10 @@
 
         win_control {
             bindings = <
-&kp LG(TAB)  &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp LANGUAGE_2    &kp KP_NUMBER_7  &kp U  &kp I  &kp O  &kp P
-&kp LA(LEFT)  &kp LC(PG_UP)  &kp DOWN  &kp LC(PG_DN)  &kp LA(RIGHT)  &trans    &trans  &kp H  &kp J  &kp K  &kp L  &kp ENTER
-&kp LS(HOME)  &kp LC(LS(V))  &kp LC(C)  &kp LC(V)  &kp LA(F4)  &trans    &trans  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LS(END)  &kp LS(LC(A))  &kp LC(LS(TAB))  &kp LALT  &kp LC(TAB)  &kp LC(LS(TAB))    &kp ENTER  &kp KP_N0  &kp BSPC
+&kp LG(TAB)  &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp LANGUAGE_2    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &kp KPLS  &kp MINUS
+&kp LA(LEFT)  &kp LC(PG_UP)  &kp DOWN  &kp LC(PG_DN)  &kp LA(RIGHT)  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KMLT  &kp FSLH
+&kp LS(HOME)  &kp LC(LS(V))  &kp LC(C)  &kp LC(V)  &kp LA(F4)  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp UNDER  &kp EQL
+&kp LS(END)  &kp LS(LC(A))  &kp LC(LS(TAB))  &kp LALT  &kp LC(TAB)  &kp LC(LS(TAB))    &kp ENTER  &kp KP_N0  &kp PRCT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -204,10 +204,10 @@
 
         win_arrows {
             bindings = <
-&trans  &kp AT_SIGN  &kp END  &kp LANGUAGE_1  &kp DOLLAR    &kp CARET  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS  &kp UP_ARROW
+&trans  &kp AT_SIGN  &kp END  &kp LANGUAGE_1  &kp DOLLAR    &kp CRRT  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS  &kp UP_ARROW
 &kp HOME  &kp HOME  &kp BACKSPACE  &kp RIGHT  &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &trans  &trans  &kp LG(V)  &kp LEFT  &trans    &trans  &kp DOWN  &kp AMPERSAND  &kp EXCLAMATION  &kp LS(SLASH)  &kp LS(INTERNATIONAL_1)
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_BACKSLASH)  &kp INTERNATIONAL_3
+&kp LEFT_SHIFT  &kp PG_UP  &trans  &kp LG(V)  &kp LEFT  &trans    &trans  &kp DOWN  &kp AMPERSAND  &kp EXCLAMATION  &kp LS(SLASH)  &kp LS(INTERNATIONAL_1)
+&trans  &kp PG_DN  &trans  &trans  &trans  &trans    &kp LS(RIGHT_BRACKET)  &kp PIPE  &kp INTERNATIONAL_3
             >;
         };
 
@@ -225,7 +225,7 @@
         MOUSE {
             bindings = <
 &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G  &kp N1    &kp N2  &kp H  &kp J  &kp K  &kp L  &kp BSPC
+&kp A  &kp S  &kp D  &kp F  &kp G  &kp N1    &kp N2  &kp H  &mkp MB1  &kp K  &mkp MB2  &kp BSPC
 &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N3    &kp N4  &kp N  &kp M  &mkp MB1  &mkp MB2  &kp SLASH
 &kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2    &lt 8 SPACE  &kp BACKSPACE  &kp LEFT_SHIFT
             >;
