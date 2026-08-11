@@ -82,7 +82,7 @@
         prof1_sw: prof1_sw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 6>;
+            bindings = <&bt BT_SEL 1 &to 1>;
         };
     };
 
