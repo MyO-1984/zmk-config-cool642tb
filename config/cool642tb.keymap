@@ -246,3 +246,17 @@
         };
     };
 };
+
+&mmv {
+    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <100>;
+    trigger-period-ms = <5>;
+    delay-ms = <20>;
+};
+
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <100>;
+    trigger-period-ms = <3>;
+    delay-ms = <3>;
+};
