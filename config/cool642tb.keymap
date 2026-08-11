@@ -41,7 +41,7 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <9 8>;
             timeout-ms = <0>;
-            layers = <9>;
+            layers = <1>;
         };
 
         MS_BTN1_ {
