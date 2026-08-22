@@ -227,7 +227,7 @@
         win_control {
             bindings = <
 &kp LG(TAB)  &kp LG(LC(LEFT))  &kp UP_ARROW  &kp LG(LC(RARW))  &kp LANGUAGE_2    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9  &kp KPLS  &kp MINUS
-&kp LA(LEFT)  &kp LC(PG_UP)  &kp DOWN  &kp LC(PG_DN)  &kp LA(RIGHT)  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KMLT  &kp FSLH
+&kp LG(LBKT)  &kp LC(PG_UP)  &kp DOWN  &kp LC(PG_DN)  &kp LG(RBKT)  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KMLT  &kp FSLH
 &kp LS(HOME)  &kp LC(LS(V))  &kp LC(C)  &kp LC(V)  &kp LA(F4)  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp UNDER  &kp EQL
 &kp LS(END)  &kp LS(LC(A))  &kp LC(LS(TAB))  &kp LALT  &kp LC(TAB)  &kp LC(LS(TAB))    &kp ENTER  &kp KP_N0  &kp PRCT
             >;
